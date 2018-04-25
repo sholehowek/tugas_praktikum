@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sholeh Owek</title>
+	<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+					* {box-sizing: border-box;}
+				body {font-family: Verdana, sans-serif;}
+				.mySlides {display: none;}
+				img {vertical-align: middle;}
+
+				/* Slideshow container */
+				.slideshow-container {
+				  max-width: 1000px;
+				  position: relative;
+				  margin: auto;
+				}
+
+				/* Caption text */
+				.text {
+				  color: #f2f2f2;
+				  font-size: 15px;
+				  padding: 8px 12px;
+				  position: absolute;
+				  bottom: 8px;
+				  width: 100%;
+				  text-align: center;
+				}
+
+				/* Number text (1/3 etc) */
+				.numbertext {
+				  color: #f2f2f2;
+				  font-size: 12px;
+				  padding: 8px 12px;
+				  position: absolute;
+				  top: 0;
+				}
+
+				/* The dots/bullets/indicators */
+				.dot {
+				  height: 15px;
+				  width: 15px;
+				  margin: 0 2px;
+				  background-color: #bbb;
+				  border-radius: 50%;
+				  display: inline-block;
+				  transition: background-color 0.6s ease;
+				}
+
+				.active {
+				  background-color: #717171;
+				}
+
+				/* Fading animation */
+				.fade {
+				  -webkit-animation-name: fade;
+				  -webkit-animation-duration: 1.5s;
+				  animation-name: fade;
+				  animation-duration: 1.5s;
+				}
+
+				@-webkit-keyframes fade {
+				  from {opacity: .4} 
+				  to {opacity: 1}
+				}
+
+				@keyframes fade {
+				  from {opacity: .4} 
+				  to {opacity: 1}
+				}
+
+				/* On smaller screens, decrease text size */
+				@media only screen and (max-width: 300px) {
+				  .text {font-size: 11px}
+				}
+
+				/* Navbar */
+
+	</style>
+</head>
+<body>	
+
+	<!--Navbar-->
+		<div class="navbar navbar-invers navbar-static-top" style="background-color: black;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-targer="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href=""> Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Link <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="">Link 1</a></li>
+								<li><a href="">Link 1</a></li>
+								<li><a href="">Link 1</a></li>
+							</ul>
+						</li>
+						<li><a href="">Page 1</a></li>
+						<li><a href="">Page 2</a></li>
+					</ul>
+				</div>
+				
+			</div>			
+		</div>
+
+
+	<!--Slideshow-->
+		<div class="container col-md-12" >
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indikator -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+				<!--Wrapper untuk slide-->
+					<div class="carousel-inner">
+
+						<div class="item active">
+							<img src="images/vmware.jpg" alt="First Slide" style="width: 100%; height: 10%;">
+							<div class="carousel-caption">								
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/proxmox.jpg" alt="Second Slide" style="width: 100%; height: 10%;">
+							<div class="carousel-caption">								
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/hyper.jpg" alt="Third Slide" style="width: 100%; height: 10%;">
+							<div class="carousel-caption">								
+							</div>
+						</div>
+					</div>		
+			</div>
+		</div>
+
+
+		<!-- akhir jumbotron -->
+		<div class="col-sm-6 col-md-4" style="text-align: justify;" >
+			<div class="thumbnail" >
+				<img src="images/vmware.jpg" class="img-thumbnail" alt="Cinque Terre" width="100%">
+				<div class="caption">
+					<h3>vmware</h3>
+					<p>VMware adalah software virtualisasi yang bisa digunakan untuk membuat virtual machine <a href="artikel/vmware.html">lanjut membaca.</a></p>
+					
+			<!--	<p><a href="vmware.html" class="btn btn-primary" role="button">Buka</a> -->
+					<a href="download/download.html" id="idvmware" class="btn btn-success" role="button">Download</a>
+					<a href="comunity.html" class="btn btn-primary">Training</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-4" style="text-align: justify;">
+			<div class="thumbnail">
+				<img src="images/proxmox.jpg" class="img-thumbnail" alt="Cinque Terre" width="500" height="250">
+				<div class="caption">
+					<h3>Proxmox</h3>
+					<p>VProxmox adalah salah satu distro linux dari basis Debian yang mempunyai fungsi khusus sebagai virtualisasi <a href="artikel/proxmox.html">lanjut membaca</a></p>					
+			<!--	<p><a href="#" class="btn btn-primary" role="button">Buka</a> -->
+					<a href="download/download.html" id="idproxmox" class="btn btn-success">Download</a>
+					<a href="comunity.html" class="btn btn-primary">Training</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-4" style="text-align: justify;">
+			<div class="thumbnail">
+				<img src="images/hyper.jpg" id="idhyper" class="img-thumbnail" alt="Cinque Terre" width="500" height="250">
+				<div class="caption">
+					<h3>Hyper-v</h3>
+					<p>Hypervisor bisa di ibaratkan suatu aplikasi khusus yang berjalan pada suatu server yang memungkinankan <a href="artikel/hyper.html">lanjut membaca</a></p>
+			<!--	<p><a href="#" class="btn btn-primary" role="button">Buka</a> -->
+					<a href="download/download.html" class="btn btn-success">Download</a>
+					<a href="comunity.html" class="btn btn-primary">Training</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	<br/>
+
+		<div class="pull-right">
+			<div id="back-top" style="display: block;">
+				<a href="#top"><span>↑</span></a>
+			</div>
+		</div>
+	
+<!-- Bagian Bawah -->	
+	
+	<div class="clearfix"></div>
+		
+	<nav class="navbar navbar-default" style="bottom: 0;margin: 0">
+		<div class="container">	
+			<center>
+				
+			<ul class="nav navbar-nav">
+				<li><a href="#">Copyright owek</a></li>				
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"></a></li>									
+			</ul>
+			</center>		
+		</div>
+	</nav>
+	
+</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html> 
