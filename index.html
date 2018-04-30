@@ -95,6 +95,31 @@
 				#jumbotron {
 					padding-top: 80px;
 				}
+
+				/*Untuk Searching */
+				#imaginary_container{
+    				margin-top:32px; /* Don't copy this */
+				}
+								
+				.stylish-input-group .input-group-addon{
+  					background: white !important; 
+				}
+				.stylish-input-group .form-control{
+					border-right:0; 
+					box-shadow:0 0 0; 
+					border-color:#ccc;
+				}
+				.stylish-input-group button{
+				    border:0;
+				    background:transparent;
+				}				
+
+
+				/*newsletter */
+				#nwsletter {
+					margin: auto;
+
+				}
 	</style>
 </head>
 <body>	
@@ -110,19 +135,23 @@
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
+						<div class="col-sm-8">
 							<ul class="nav navbar-nav" style="padding-left: 90px;">
-							<li class="active"><a href="">Home</a></li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="">Virtualisasi</a></li>
-									<li><a href="download/download.html">Download & Training</a></li>
-									<li><a href="">Tutorial Instalasi</a></li>
-								</ul>
-							</li>
-							<li><a href="">Tentang Owek</a></li>
-							<li><a href="contact.html">Kontak Owek</a></li>
-						</ul>
+								<li class="active"><a href="">Home</a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#v1">Virtualisasi</a></li>
+										<li><a href="download/download.html">Download & Training</a></li>
+										<li><a href="">Tutorial Instalasi</a></li>
+									</ul>
+								</li>
+								<li><a href="">Tentang Owek</a></li>
+								<li><a href="contact.html">Kontak Owek</a></li>
+							</ul>
+						</div>
+						<!--<div class="form-group"></div>-->
+						
 				</div>				
 			</div>			
 		</div>
@@ -164,7 +193,7 @@
 
 
 		<!-- akhir jumbotron -->
-		<div class="container">
+		<div class="container" id="v1">
 			<div class="col-sm-6 col-md-4" style="text-align: justify;" id="jumbotron" >
 				<div class="thumbnail">
 					<a href="#vm"></a>
@@ -211,14 +240,15 @@
 			</div>
 		</div>
 
-		</div>
-	<br/>
 
-		<div class="pull-right">
-			<div id="back-top" style="display: block;">
-				<a href="#top"><span>↑</span></a>
+		<div class="container" style="padding-bottom: 50px;padding-top: 50px; padding-left: 450px;">
+			<div class=" row col-md-12">
+				<p>Daftarkan Emalmu untuk Info Terbaru </p>
+				<input type="text-align" placeholder="Alamat Email Anda..."><button class="btn-primary">Daftar</button>
 			</div>
 		</div>
+
+
 	
 <!-- Bagian Bawah -->	
 	
