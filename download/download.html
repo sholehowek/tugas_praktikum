@@ -91,6 +91,39 @@
 			</div>			
 		</div>
 
+		<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Review Download & Training"
+	},
+	axisY: {
+		title: ""
+	},
+	data: [{        
+		type: "column",  
+		showInLegend: true, 
+		legendMarkerColor: "grey",
+		legendText: "VMware, Proxmox, & Hyper-V",
+		dataPoints: [      
+			{ y: 300878, label: "Download VMware" },
+			{ y: 266455,  label: "Download Proxmox" },
+			{ y: 169709,  label: "Download Microsoft Hyper-V" },
+			{ y: 258400,  label: "Training VMware" },
+			{ y: 182503,  label: "Training Proxmox" },
+			{ y: 101500, label: "Training Microsoft Hyper-V" },
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+
 		<div class="container">
 			<div class="row col-md-10">
 				<h1 id="fontcontent">All Download</h1>
@@ -106,6 +139,8 @@
 						</div>
 				</div>
 
+<div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 				<!-- Bagian Vmware -->
 					<p>&nbsp;</p>
